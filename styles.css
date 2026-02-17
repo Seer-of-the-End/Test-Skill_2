@@ -66,7 +66,8 @@ li {
   font-size: 2.5rem;
 }
 li:hover {
-  border-right: 5px solid #fff;
+  text-shadow: 1px 1px #ffffff;
+  transition: 0.3s;
 }
 .imgas {
   border: 2px solid #819EDF;
@@ -74,14 +75,6 @@ li:hover {
   border-radius: 0.5rem;
   width: 9.9vw;
   height: auto;
-}
-.my-profils {
-  display: flex;
-  flex-direction:column;  
-
-}
-.my-profils::not(.my-profils-a) {
-  align-items: center;
 }
 .my-profils-h3 {
   position: relative;
@@ -91,6 +84,7 @@ li:hover {
 }
 .my-profils-a {
   position: relative;
+  align-self: flex-start; 
   top: 1rem;
   font-size: 2rem;
   color: #99effc;
@@ -102,6 +96,7 @@ li:hover {
 }
 .my-profils-a:hover {
   border-right: 4px solid #fff;
+    transition: all 0.3s ease;
 }
 
 .left-panel {
@@ -128,8 +123,8 @@ li:hover {
   overflow-y: auto;
 }
 .p-map {
-  color: #51C9FB;
-  text-shadow: 3px 0 #001169;
+  color: #a5dbf2;
+  text-shadow: 3px 0 #001789;
   font-size: 2.5rem;
 }
 .p-map::before {
@@ -142,7 +137,7 @@ li:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 0 220px; /* слева и справа по 220px */
+  margin: 0 220px; 
 }
 .my-about {
   display: flex;
@@ -156,6 +151,11 @@ li:hover {
   border-radius: 0.7rem;
   text-align: center;
   padding: 30px;
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .about-h2 {
   font-size: 3rem;
@@ -194,7 +194,7 @@ li:hover {
     max-height: 100vh !important;
     overflow-x: hidden !important;
     overflow-y:hidden;
-    position: relative; /* Контроль над absolute элементами */
+    position: relative;
   }
 
   header {
