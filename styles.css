@@ -50,8 +50,7 @@ header {
 }
 .navbur a {
   color: #38C5DC;
-  text-shadow: 1px 1px #9913ff;
-
+  text-shadow: 1px 1px #018692;
 }
 li::before {
   color: #9000ff;
@@ -66,8 +65,9 @@ li {
   font-size: 2.5rem;
 }
 li:hover {
-  text-shadow: 1px 1px #ffffff;
-  transition: 0.3s;
+  filter: drop-shadow(0 0 1rem #53a7f5)  saturate(200%);
+  text-shadow: 1px 1px #36c6ff;
+  transition: all 0.3s ease-out;
 }
 .imgas {
   border: 2px solid #819EDF;
@@ -79,12 +79,13 @@ li:hover {
 .my-profils-h3 {
   position: relative;
   top: 1rem;
-  color:#51C9FB;
+  color: #a01fff;
   font-size: 2.5rem;
+  text-shadow: 3px 1px #001169;
 }
 .my-profils-a {
   position: relative;
-  align-self: flex-start; 
+  align-self: flex-start;
   top: 1rem;
   font-size: 2rem;
   color: #99effc;
@@ -95,8 +96,9 @@ li:hover {
   content: "☞ ";
 }
 .my-profils-a:hover {
-  border-right: 4px solid #fff;
-    transition: all 0.3s ease;
+  filter: drop-shadow(0 0 1rem #53a7f5)  saturate(200%);
+  text-shadow: 1px 1px #36c6ff;
+  transition: all 0.3s ease-out;
 }
 
 .left-panel {
@@ -151,18 +153,51 @@ li:hover {
   border-radius: 0.7rem;
   text-align: center;
   padding: 30px;
-  animation: fadeIn 1s ease;
-}
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 .about-h2 {
   font-size: 3rem;
+  filter: drop-shadow(-2px -2px rgb(162, 0, 255));
 }
 .about-p {
   font-size: 1.7rem;
 }
+
+/* .card {
+  background: linear-gradient(135deg, #37C0D6 0%, #9500ff 100%);
+  border-radius: 20px;
+  padding: 30px;
+  
+  transition: 
+    transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    box-shadow 1s ease,
+    filter 0.3s ease,
+    opacity 0.3s ease;
+    filter: drop-shadow 0 10px 30px red;
+    backdrop-filter: url("./Fhoto/Ktylhy.png") blur(4px) saturate(150%);
+    animation: card 1s linear infinite;
+} 
+@keyframes card {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.card:hover {
+  transform: scale(2);
+  filter: drop-shadow( 0 0 1rem #00ff00) brightness(100%) saturate(200%);
+}*/
+
+/* .spin-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient( #00ff00, #000000);
+  
+  font-size: 2rem;
+  animation: spin 0.2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
 
 .hrs {
   position: relative;
